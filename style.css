@@ -2,164 +2,209 @@
 
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  body {
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 2rem;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  header h1 {
-    font-size: 3rem;
-    color: #ff0055;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 5px #000;
-  }
-  
-  .tagline {
-    font-size: 1.2rem;
-    color: #cccccc;
-    margin-top: 0.5rem;
-    font-style: normal;
-  }
-  
-  nav {
-    background-color: #111;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex; /* Make it horizontal */
-    justify-content: center; /* Center horizontally */
-    gap: 2rem; /* Space between items */
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    display: inline;
-  }
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
+}
 
-  nav a {
-    text-decoration: none;
-    color: #ffcc00;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #ff0055;
-  }
-  
-  section {
-    margin-bottom: 4rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.03);
-    border-left: 4px solid #ff0055;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-bottom: 1rem;
-  }
-  
-  section p, section ul li {
-    font-size: 1rem;
-    color: #dddddd;
-  }
-  
-  ul {
-    list-style: square;
-    padding-left: 1.5rem;
-  }
-  
-  button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    background-color: #ff0055;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  button:hover {
-    background-color: #cc0044;
-    transform: scale(1.05);
-  }
-  
-  footer {
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 0.9rem;
-    color: #888;
-    border-top: 1px solid #333;
-    margin-top: 3rem;
-  }
-  
-  /* Glitchy and psychedelic vibes */
-  .hero {
-    background: radial-gradient(circle at top left, #ff00cc, #3300ff);
-    color: #fff;
-    text-align: center;
-    border-left: none;
-    box-shadow: 0 0 20px #ff00cc80;
-    padding: 3rem 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .hero h1 {
-    font-size: 4rem;
-    text-shadow: 0 0 5px #fff, 0 0 10px #ff00cc, 0 0 15px #3300ff;
-  }
-  
-  .vibe {
-    font-style: normal;
-    background: linear-gradient(45deg, #222, #333);
-    color: #ccc;
-    border-color: #6600cc;
-  }
-  
-  .rot-section {
-    background: #1c1c1c;
-    border-color: #cc0000;
-    color: #f5f5f5;
-  }
-  
-  .vision ul li::marker {
-    color: #00ffaa;
-  }
-  
-  .hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .visible {
-    opacity: 1;
-    transform: none;
-  }
-  
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ff0055;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+nav {
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Make it horizontal */
+  justify-content: center; /* Center horizontally */
+  gap: 2rem; /* Space between items */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff0055;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #ff0055;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+section p, section ul li {
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #cc0044;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #333;
+  margin-top: 3rem;
+}
+
+/* Glitchy and psychedelic vibes */
+.hero {
+  background: radial-gradient(circle at top left, #ff00cc, #3300ff);
+  color: #fff;
+  text-align: center;
+  border-left: none;
+  box-shadow: 0 0 20px #ff00cc80;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff00cc, 0 0 15px #3300ff;
+}
+
+.vibe {
+  background: linear-gradient(45deg, #222, #333);
+  color: #ccc;
+  padding: 2rem;
+  border-left: 4px solid #6600cc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vibe h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.vibe p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 1.5rem; /* Adds extra space between paragraphs */
+}
+
+.vibe .cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #ff0055;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.vibe .cta-button:hover {
+  background-color: #cc0044;
+}
+
+.rot-section {
+  background: #1c1c1c;
+  border-color: #cc0000;
+  color: #f5f5f5;
+}
+
+.vision ul li::marker {
+  color: #00ffaa;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Video link styling */
+.video-link {
+  color: #ffcc00; /* Set initial color */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.video-link:hover {
+  color: #ff0055; /* Color change when hovering */
+}
+
+/* Optional: Increase the size or padding if needed */
+nav a, .cta-button {
+  padding: 1rem 2rem; /* Make sure buttons and links have similar padding */
+}
