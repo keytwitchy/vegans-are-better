@@ -27,6 +27,11 @@ header h1 {
   text-shadow: 2px 2px 5px #000;
 }
 
+p {
+  font-size: 1.2rem; /* Increase font size here (you can adjust the number to your preference) */
+  line-height: 1.6;  /* Adjust line spacing to make the text easier to read */
+}
+
 .tagline {
   font-size: 1.2rem;
   color: #cccccc;
@@ -40,13 +45,14 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%; /* Ensure full width */
 }
 
 nav ul {
   list-style: none;
-  display: flex; /* Make it horizontal */
-  justify-content: center; /* Center horizontally */
-  gap: 2rem; /* Space between items */
+  display: flex; /* Makes the list horizontal */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 2rem; /* Adds space between the items */
   padding: 0;
   margin: 0;
 }
@@ -65,6 +71,10 @@ nav a {
 
 nav a:hover {
   color: #ff0055;
+}
+
+nav a.active {
+  color: #ff0055; /* Red color for the active page */
 }
 
 section {
@@ -177,6 +187,28 @@ footer {
   color: #f5f5f5;
 }
 
+.rot-section p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 1.5rem; /* Adds extra space between paragraphs */
+}
+
+.rot-section .cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #ff0055;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rot-section .cta-button:hover {
+  background-color: #cc0044;
+}
+
 .vision ul li::marker {
   color: #00ffaa;
 }
@@ -208,3 +240,82 @@ footer {
 nav a, .cta-button {
   padding: 1rem 2rem; /* Make sure buttons and links have similar padding */
 }
+
+a {
+  color: #fdcc00; /* Yellow */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0055; /* Reddish-pink */
+  text-decoration: underline;
+}
+
+.responsive-img {
+  max-width: 30%;     /* The image will not exceed its container's width */
+  height: auto;        /* The height will adjust to maintain the aspect ratio */
+  display: block;      /* Makes the image a block-level element */
+  margin: 1rem auto;      /* Centers the image */
+}
+
+.side-by-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-right {
+  flex-direction: row-reverse;
+}
+
+.side-by-side img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.side-by-side p {
+  flex: 1 1 300px;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-with-image img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  order: 2; /* forces it to right side */
+}
+
+.text-with-image p {
+  flex: 1 1 300px;
+  margin: 0;
+  order: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto 2rem; /* 2rem = bottom spacing */
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
