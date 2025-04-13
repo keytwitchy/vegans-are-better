@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vegans Are Better</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      line-height: 1.6;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2.glitch {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ff004f;
+      text-shadow: 0 0 5px #ff004f80, 0 0 10px #ff004f40;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    h2.glitch::before, h2.glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #ffae00;
+      animation: glitch-anim 1s ease-in-out infinite;
+    }
+
+    h2.glitch::after {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes glitch-anim {
+      0% { transform: translate(0, 0); opacity: 0.8; }
+      30% { transform: translate(-2px, 0); opacity: 0.6; }
+      50% { transform: translate(2px, 0); opacity: 0.8; }
+      70% { transform: translate(0, 2px); opacity: 0.6; }
+      100% { transform: translate(0, 0); opacity: 0.8; }
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    form {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px #ff004f44;
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: block;
+      color: #ffae00;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #2a2a2a;
+      color: #f2f2f2;
+      font-size: 1rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    button {
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff004f, #ffae00);
+      color: #111;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    .form-response {
+      text-align: center;
+      margin-top: 1rem;
+      color: #00ff99;
+      font-style: italic;
+    }
+
+    a.back-link {
+      margin-top: 3rem;
+      color: #888;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    a.back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 2rem 1rem;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="glitch" data-text="Contact">Contact</h2>
+  <p>If you've got questions, thoughts, ideas, or just want to scream into the void, drop me a message.</p>
+
+  <form id="contact-form" action="https://formspree.io/f/movereog" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name" />
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Lay it on me..."></textarea>
+    </div>
+
+    <button type="submit">Send It</button>
+    <p id="form-response" class="form-response"></p>
+  </form>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const response = document.getElementById('form-response');
+
+    form.addEventListener('submit', function (e) {
+      response.textContent = "Sending...";
+    });
+  </script>
+
+<footer>
+  <p>
+    &copy; 2025 Vegans Are Better |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="https://www.buymeacoffee.com/vegansarebetter" target="_blank" rel="noopener" class="salad-link">Buy Me a Salad 🥗</a>
+  </p>
+</footer> 
+
+</body>
+</html>
+
+
+

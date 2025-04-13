@@ -1,23 +1,25 @@
-// Glitch effect for the main header
-const glitchText = document.querySelector("header h1");
-const originalText = glitchText.textContent;
+// Glitch effect for all h1 elements
+const glitchTitles = document.querySelectorAll("h1");
 
 function glitch() {
   const chars = "!@#$%^&*()_+=-{}[]|:;<>,.?/~";
-  const glitchLength = 6;
-  let glitched = originalText.split("").map(char => {
-    return Math.random() > 0.9 ? chars[Math.floor(Math.random() * chars.length)] : char;
+
+  glitchTitles.forEach(glitchText => {
+    const originalText = glitchText.textContent;
+
+    let glitched = originalText.split("").map(char => {
+      return Math.random() > 0.9 ? chars[Math.floor(Math.random() * chars.length)] : char;
+    });
+    glitchText.textContent = glitched.join("");
+    
+    setTimeout(() => {
+      glitchText.textContent = originalText;
+    }, 100);
   });
-  glitchText.textContent = glitched.join("");
-  setTimeout(() => {
-    glitchText.textContent = originalText;
-  }, 100);
 }
 
-// Repeat glitch occasionally
 setInterval(glitch, 3000);
 
-// Fade-in on scroll for all sections
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(entries => {
@@ -35,6 +37,4 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-
-  
 
