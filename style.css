@@ -103,7 +103,7 @@ nav ul {
   list-style: none;
   display: flex; 
   justify-content: center; 
-  gap: 0.1rem; 
+  gap: 1rem; 
   padding: 0;
   margin: 0;
 }
@@ -915,4 +915,3 @@ footer p a:hover {
 .collapsible-sources[open] ul {
   margin-top: 1rem;
 }
-
