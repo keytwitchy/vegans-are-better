@@ -810,6 +810,7 @@ h3.section-heading {
 
 .health-nav {
   position: fixed; 
+  z-index: 9999;
   top: 50%; 
   left: 0;
   transform: translateY(-50%);
