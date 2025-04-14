@@ -833,8 +833,8 @@ footer p a:hover {
 
 @media (max-width: 768px) {
   .scaled-wrapper {
-    transform: scale(4);
-    transform-origin: top center;
-    width: 250%; 
+    transform: scale(0.39);
+    transform-origin: top left;
+    width: 256.8%; 
   }
 }
