@@ -837,4 +837,34 @@ footer p a:hover {
     transform-origin: top left;
     width: 256.8%; 
   }
+  .index-section p {
+    font-size: 1.3rem;
+  }
+  .philosophy-section p {
+    font-size: 1.3rem;
+  }
+  .psychology-section p {
+    font-size: 1.3rem;
+  }
+  .counter-arguments-section p {
+    font-size: 1.3rem;
+  }
+  .counter-arguments-section .question {
+    font-size: 1.2rem;
+  }
+  .health-section p {
+    font-size: 1.3rem;
+  }
+  .big-picture-section p {
+    font-size: 1.3rem;
+  }
+  .health-section li {
+    font-size: 1.2rem;
+  }
+  .health-section li strong {
+    font-size: 1.2rem
+  }
+  .counter-arguments-section .answer {
+    font-size: 1.2rem;
+  }
 }
