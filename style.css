@@ -830,3 +830,19 @@ footer p a:hover {
 .collapsible-sources[open] ul {
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .scaled-wrapper {
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 111.11%; /* 100 / 0.9 to compensate for scale */
+  }
+}
+
+@media (max-width: 768px) {
+  .scaled-wrapper {
+    transform: scale(0.4);
+    transform-origin: top left;
+    width: 250%; /* Counteracts the scale to keep layout intact */
+  }
+}
