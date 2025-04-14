@@ -833,9 +833,9 @@ footer p a:hover {
 
 @media (max-width: 768px) {
   .scaled-wrapper {
-    transform: scale(0.39);
+    transform: scale(0.375);
     transform-origin: top left;
-    width: 256.8%; 
+    width: 267%; 
   }
   .index-section p {
     font-size: 1.3rem;
