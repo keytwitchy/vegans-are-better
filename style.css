@@ -759,8 +759,12 @@ h3.section-heading {
   text-shadow: 0 0 5px #66ffcc;
 }
 
+footer p {
+  font-size: 0.9rem
+}
+
 footer p a {
-  color: #ffd700; 
+  color: #e0e0e0; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
