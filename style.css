@@ -221,6 +221,7 @@ footer {
 
 .read-more-button:hover::before {
   left: 0;
+  text-decoration: none;
 }
 
 .index-section .read-more-button {
@@ -444,7 +445,7 @@ a {
 
 a:hover {
   color: #ff0055; 
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .responsive-img {
