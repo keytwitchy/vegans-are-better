@@ -967,36 +967,44 @@ footer p a:hover {
   .scaled-wrapper {
     transform: scale(0.375);
     transform-origin: top left;
-    width: 267%; 
+    width: 267%;
+    overflow-x: hidden;
   }
-  .index-section p {
-    font-size: 1.3rem;
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
-  .philosophy-section p {
-    font-size: 1.3rem;
+
+  .health-nav {
+    position: absolute;
+    top: 10rem;
+    left: 1rem;
+    transform: none;
+    z-index: 999;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(34, 193, 195, 0.25);
   }
-  .psychology-section p {
-    font-size: 1.3rem;
+
+  .health-nav ul {
+    padding: 0;
   }
-  .counter-arguments-section p {
-    font-size: 1.3rem;
+
+  .health-nav li {
+    margin: 0.5rem 0;
   }
-  .counter-arguments-section .question {
-    font-size: 1.2rem;
+
+  footer {
+    margin-bottom: 5rem;
   }
-  .health-section p {
-    font-size: 1.3rem;
+
+  img,
+  .section-image {
+    max-width: 90%;
+    height: auto;
   }
-  .big-picture-section p {
-    font-size: 1.3rem;
-  }
-  .health-section li {
-    font-size: 1.2rem;
-  }
-  .health-section li strong {
-    font-size: 1.2rem
-  }
-  .counter-arguments-section .answer {
-    font-size: 1.2rem;
-  }
+  
 }
