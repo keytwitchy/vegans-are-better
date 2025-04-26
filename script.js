@@ -1,15 +1,21 @@
 // Glitch effect for all h1 elements
-const glitchTitles = document.querySelectorAll("h1");
+const glitchTitles = document.querySelectorAll(".js-glitch");
 
 function glitch() {
   const chars = "!@#$%^&*()_+=-{}[]|:;<>,.?/~";
 
   glitchTitles.forEach(glitchText => {
-    const originalText = glitchText.textContent;
+    const originalText = glitchText.dataset.original || glitchText.textContent;
+
+    // Save original text if not already saved
+    if (!glitchText.dataset.original) {
+      glitchText.dataset.original = originalText;
+    }
 
     let glitched = originalText.split("").map(char => {
       return Math.random() > 0.9 ? chars[Math.floor(Math.random() * chars.length)] : char;
     });
+    
     glitchText.textContent = glitched.join("");
     
     setTimeout(() => {
@@ -19,6 +25,7 @@ function glitch() {
 }
 
 setInterval(glitch, 3000);
+
 
 const sections = document.querySelectorAll("section");
 
