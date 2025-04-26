@@ -143,11 +143,11 @@ section p, section ul li {
 }
 
 .section-preview {
-  font-family: 'Poppins', sans-serif; /* Or any modern clean font */
+  font-family: 'Poppins', sans-serif; 
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
-  color: #ffcc00; /* or another highlight color you like */
+  color: #ffcc00; 
   margin: 1.5rem auto;
   max-width: 700px;
   line-height: 1.6;
@@ -977,12 +977,12 @@ footer p a:hover {
 }
 
 .collapsible-section.active .section-full {
-  max-height: 5000px; /* big enough to reveal content */
+  max-height: 5000px; 
   padding-top: 1rem;
 }
 
 .collapsible-section.active h2::after {
-  transform: translateY(-50%) rotate(180deg); /* Rotate when expanded */
+  transform: translateY(-50%) rotate(180deg); 
 }
 
 .expand-icon {
@@ -1009,7 +1009,7 @@ footer p a:hover {
 
 .collapsible-section.active .expand-icon {
   transform: rotate(-135deg) scale(1.15);
-  animation: none; /* Stop pulsing once expanded */
+  animation: none; 
 }
 
 
