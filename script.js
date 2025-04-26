@@ -36,3 +36,14 @@ sections.forEach(section => {
   section.classList.add("hidden");
   observer.observe(section);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const expandIcons = document.querySelectorAll('.expand-icon');
+
+  expandIcons.forEach(icon => {
+    icon.addEventListener('click', function() {
+      const section = this.closest('.collapsible-section');
+      section.classList.toggle('active');
+    });
+  });
+});
